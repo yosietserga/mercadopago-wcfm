@@ -278,13 +278,13 @@ class WC_WooMercadoPagoSplit_PaymentAbstract extends WC_Payment_Gateway
      */
     public function update_option($key, $value = '')
     {
-        if ($key == 'enabled' && $value == 'yes') {
+        if ($key == 'enabled' && $value == 'yes') {/*
             if (empty($this->mp->get_access_token())) {
                 $message = _('Configure your credentials to enable Mercado Pago payment methods.');
                 $this->log->write_log(__FUNCTION__, $message);
                 echo json_encode(array('success' => false, 'data' => $message));
                 die();
-            }
+            }*/
         }
         return parent::update_option($key, $value);
     }
@@ -1050,7 +1050,7 @@ class WC_WooMercadoPagoSplit_PaymentAbstract extends WC_Payment_Gateway
     {
         $countryLink = array(
             'mla' => 'https://www.mercadopago.com.ar/developers/es/', // Argentinian
-            'mlb' => 'https://www.mercadopago.com.br/developers/pt/', // Brazil
+            'mlb' => 'https://www.mercadopago.com.ar/developers/pt/', // Brazil
             'mlc' => 'https://www.mercadopago.cl/developers/es/', // Chile
             'mco' => 'https://www.mercadopago.com.co/developers/es/', // Colombia
             'mlm' => 'https://www.mercadopago.com.mx/developers/es/', // Mexico

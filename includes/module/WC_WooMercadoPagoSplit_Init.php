@@ -125,8 +125,8 @@ class WC_WooMercadoPagoSplit_Init
             require_once dirname(__FILE__) . '/WC_WooMercadoPagoSplit_Configs.php';
             require_once dirname(__FILE__) . '/log/WC_WooMercadoPagoSplit_Log.php';
             require_once dirname(__FILE__) . '/WC_WooMercadoPagoSplit_Module.php';
-            require_once dirname(__FILE__) . '/WC_WooMercadoPagoSplit_WCFM_Frontend.php';
             require_once dirname(__FILE__) . '/WC_WooMercadoPagoSplit_Credentials.php';
+            require_once dirname(__FILE__) . '/WC_WooMercadoPagoSplit_WCFM_Frontend.php';
             require_once dirname(__FILE__) . '../../admin/notices/WC_WooMercadoPagoSplit_ReviewNotice.php';
 
             WC_WooMercadoPagoSplit_Module::init_mercado_pago_class();
